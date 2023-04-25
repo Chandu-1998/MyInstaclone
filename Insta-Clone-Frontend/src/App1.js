@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import insta from './PostView/insta.png'
 import Postview from './PostView/postview';
 import camera from './PostView/camera.png'
 function App() {
   const [userData, updateUserData] = useState([])
+  const navigate = useNavigate()
   useEffect(() => {
         fetch('https://instaclone-backend-fe73.onrender.com/getposts')
             .then(function (response) {
@@ -30,7 +31,7 @@ function App() {
         
         <img  alt='cam' src={camera}  id='camera' width={'80px'} height={'80px'}  />
         </Link> 
-        <a href='/upload'><span><p id='post'><b> Post</b></p></span></a>
+        <span><p id='post' onClick={()=>{navigate('/upload')}}><b> Post</b></p></span>
         </div> 
         </header>
         <div className="App">
