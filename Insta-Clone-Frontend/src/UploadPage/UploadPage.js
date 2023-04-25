@@ -11,7 +11,7 @@ const Upload = () => {
         e.preventDefault()
         let data =e.target
         let formData=new FormData(data)
-        await fetch('http://localhost:7000/posts',{method:"POST",body:formData})
+        await fetch('https://instaclone-backend-fe73.onrender.com/posts',{method:"POST",body:formData})
         .then(res=> res.json()).then((d)=>{
             alert("post successful")
             console.log(d);
