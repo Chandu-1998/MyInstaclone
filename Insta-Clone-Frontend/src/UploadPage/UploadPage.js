@@ -19,7 +19,7 @@ const Upload = () => {
     }
     return (
         <div className="uploadcontainer">
-            <h1>Upload Your Post</h1>
+            <h1>Upload Your Post</h1>  
             <form onSubmit={(e)=>handleSubmit(e)} id='mainform'>
                 <input type="file" required placeholder="File" name="PostImage"  className="input1" id="image"/><br/>
                 <input type="text" required placeholder="Author" name="name" className="input1"  /><br/>
