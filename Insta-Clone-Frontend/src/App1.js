@@ -27,7 +27,10 @@ function App() {
       <div id='fix'>
       <div id='head'><img id='logo' alt='logo' src={insta}>
       </img><h2 id='title'><b>InstaClone</b></h2></div> <Link to="/upload">
-        <img  alt='cam' src={camera}  id='camera' width={'80px'} height={'80px'}  /></Link> 
+        
+        <img  alt='cam' src={camera}  id='camera' width={'80px'} height={'80px'}  />
+        </Link> 
+        <a href='/upload'><span><p id='post'><b>Click Here To Post</b></p></span></a>
         </div> 
         </header>
         <div className="App">
