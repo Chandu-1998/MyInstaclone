@@ -31,7 +31,7 @@ function App() {
         
         <img  alt='cam' src={camera}  id='camera' width={'80px'} height={'80px'}  />
         </Link> 
-        <span><p id='post' onClick={()=>{navigate('/upload')}}><b> Post</b></p></span>
+        <Link to='/upload'><p id='post' ><b> Post</b></p></Link>
         </div> 
         </header>
         <div className="App">
