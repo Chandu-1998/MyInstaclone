@@ -19,7 +19,7 @@ body{
       }
 }
 .uploadcontainer {
-    width: 60vw;
+    width: 50vw;
     display: flex;
     /* margin: 10% auto; */
     margin: 20px auto;
