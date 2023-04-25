@@ -30,7 +30,7 @@ function App() {
         
         <img  alt='cam' src={camera}  id='camera' width={'80px'} height={'80px'}  />
         </Link> 
-        <a href='/upload'><span><p id='post'><b>Click Here To Post</b></p></span></a>
+        <a href='/upload'><span><p id='post'><b> Post</b></p></span></a>
         </div> 
         </header>
         <div className="App">
